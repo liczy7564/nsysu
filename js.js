@@ -17,8 +17,8 @@ $(document).ready(function(){
       for(let i=0;i<result.length;i++){
       The_class.innerHTML+="<div class='carousel-item'><div class='class_card'><div class='row'><div class='col-md-6 col-xs-12'><div class='class_lt'><div class='class_title'>"+
       result[i]['名稱']+"</div><div class='class_information'>"+
-      result[i]['資訊']+"<br>"+result[i]['老師']+"<br>"+result[i]['分數']+"</div><div class='class_text'>"+result[i]['心得']+ "</div></div></div><div class='col-md-6 col-xs-12'><div class='class_rt'><img class='class_img' src="+
-      result[i]['圖片']+"></img></div></div></div></div>"
+      result[i]['資訊']+"<br>"+result[i]['老師']+"<br>"+result[i]['分數']+"</div><div class='class_text'>"+result[i]['心得']+ "</div></div></div><div class='col-md-6 col-xs-12'><div class='sop_rt'><img class='scroll_img' src='"+
+      result[i]['圖片']+"'></img></div></div></div></div>"
       }
     }
   });
@@ -63,6 +63,22 @@ $(document).ready(function(){
       }
     }
   });
+
+    // 網頁作品
+  let The_web=document.querySelector(".The_web");
+  $.ajax({
+    url:"json/網頁.json",
+    success:function(result){
+      for(let i=0;i<result.length;i++){
+        The_web.innerHTML+="<hr><div class='web_content'><div class='Societie'><div class='row'><div class='col-md-6 col-xs-12'><div class='Societie_lt'><h6 class='text_middle'>"+
+        result[i]['主題']+"</h6><p>"+
+        result[i]['內容']+"</p><a href='"+
+        result[i]['link']+"'>前往網頁</a></div></div><div class='col-md-6 col-xs-12'><div class='Societie_rt'><img class='scroll_img' src='"+
+        result[i]['圖片']+"'></img></div></div></div></div></div>"
+      }
+    }
+  });
+  
  
   let container_Certifications=document.querySelector(".container_Certifications");
   $.ajax({

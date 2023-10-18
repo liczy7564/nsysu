@@ -8,6 +8,10 @@ body{
 	padding:0;
 	  /* background: #FFF8E4; */
   }
+  hr{
+	width: 70%;
+	margin: auto;
+  }
 a:link{
 	color: #ED9B46;
 	text-decoration:none;
@@ -37,8 +41,8 @@ h3{
 h4{
 	font-size: 120%;
 	font-weight: 800px;
-  color: #B7A99C;
-  text-align: center;
+  	color: #B7A99C;
+  	text-align: center;
 }
 h5{
 	color:#303030;
@@ -117,10 +121,7 @@ img{
 	.Mdis{
 		display: none;
 	}
-	.teaching_text{
-		text-align: left;
-		margin: 10px;
-	}
+
 }
 @media (max-width:767px) {/* 小 */
 	.family_text{
@@ -141,11 +142,6 @@ img{
 	}
 	.scent{/*小置中*/
 		display: block;
-	}
-	.teaching_text{
-		background-color: #FAFFFF;
-		border-radius: 10px;
-		border: 1px solid #E2EFFF;
 	}
 } 
 /* 文字敘述 */
@@ -183,7 +179,7 @@ img{
 	position: relative;
 	font-size: 26px;
 	margin-left: 2px;
-	margin-right: 40px;
+	margin-right: 10px;
 	color: #AA5C30;
 }
 .next_icon{
@@ -239,6 +235,7 @@ img{
 .The_about{
 	padding: 5px;
 }
+
 .about_img{
 	object-position: center center; 
 	object-fit: scale-down;
@@ -453,14 +450,13 @@ img{
 	font-size: 16px;
 }
 .The_time {
-	margin: 0;
 	text-align: left;
-	margin-left: 20px;
-	font-size: 0.7em;
+	margin: 5px 74px 10px 20px;
+	font-size: 14px;
 	line-height: 20px;
 	width: 88%;
 	font-weight: 400;
-	color: #808080;
+	color: #5e5e7b;
 }
 .The_time{
 	display: none;
@@ -520,12 +516,13 @@ img{
 	object-fit: scale-down;
 	display: block;
 	height: 20vw;
+
 	margin: 10px auto 10px auto;
 	background-repeat: no-repeat;
 	max-height: 350px;
-	min-height: 280px;
-	padding-bottom: 25px;
-	border-radius: 5px;
+	min-height: 300px;
+	padding:25px ;
+	border-radius: 10px;
 }
 .Activity_2_img{
 	object-position: center center; 
@@ -537,6 +534,19 @@ img{
 	max-height: 350px;
 	min-height: 230px;
 	border-radius: 5px;
+}
+
+.scroll_img{
+	object-position: center center; 
+	object-fit: scale-down;
+	display: block;
+	height: 15vw;
+	margin: 10px auto 10px auto;
+	background-repeat: no-repeat;
+	max-height: 350px;
+	min-height: 170px;
+	border-radius: 5px;
+	padding: 0 10px 25px 10px;
 }
 .Activity_lt{
 	margin: auto;
@@ -576,20 +586,33 @@ img{
 	min-height: 200px;
 	margin: 0 10px 0 10px;
 }
+.web_img{
+	object-position: center center; 
+	object-fit: scale-down;
+	display: block;
+	height: 20vw;
+	border-radius: 20.5px;
+	max-height: 400px;
+	min-height: 350px;
+	margin: 0 10px 0 10px;
+	border: 1px solid #5e5149;
+	padding: 5px;
+}
 .class_lt{
 	margin: auto;
 	width: 90%;
 	padding: 5px;
-	min-height: 280px;
+	overflow: auto;
 }
-.class_rt{
+.sop_rt{
 	width: 100%;
-	margin: auto;
+	margin: 0 auto 10px auto;
 	padding: 10px;
 	border-radius: 15px;
 	overflow-x: auto;
 	display: flex;
-	background-color: #E5F2F6;
+	border: 1px solid #fff;
+	background-color: #fef1ec;
 }
 .All_img{
 	width: 100%;
@@ -662,28 +685,11 @@ img{
 	width: 85%;
 	margin: auto;
 }
-.Societie_lt{
-	margin: auto;
-}
-.Societie_rt{
-	margin: auto;
-}
-.Societie_img{
-	height: 22vw;
+.Societie_lt a {
 	display: block;
-	border-radius: 15.5px;
-	min-height: 170PX;
-}
-.web_img{
-	object-position: center center; 
-	object-fit: scale-down;
-    height: 20vw;
-	display: block;
-	min-height: 340px;
-	padding-bottom: 20px;
-	min-width: 250px;
-	max-width: 450px;
-	margin: 10px auto 10px auto;
+    padding-bottom: 10px;
+	text-align: center;
+
 }
 .teaching_img{
 	object-position: center center; 
@@ -693,11 +699,6 @@ img{
 	min-height: 340px;
 	padding-bottom: 20px;
 	margin: 10px auto 10px auto;
-}
-.teaching_text{
-	height: 170px;
-	overflow: auto;
-	padding: 10px;
 }
 /* --------教學經驗END-------- */
 /*--------- 專題 Spractice-----*/
@@ -744,18 +745,7 @@ img{
 	font-size: 10px;
 	text-align: center;
 }
-.Spractice{
-	vertical-align: middle;
-	margin: auto;
-	width: 95%;
-	padding: 5px;
-}
-.cadre_img{
-	border-radius: 20.5px;
-	width: 90%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
+
 /*--------- 專題 Spractice END-----*/
 /*----------------- 其他 Other start--------------*/
 .Other_lt{
@@ -770,9 +760,6 @@ img{
 .Other_text_Small{
 	color:#426789;
 	font-size: 10px;
-}
-.Other_text{
-	vertical-align: middle;	
 }
 .skill_style{  /* skill樣式 */
 	text-align: center;
@@ -874,8 +861,8 @@ img{
 .footer{
 	margin-top: 40px;
 	text-align: center;
-	padding: 12px;
-	font-size: 13px;
-	height: 50px; /*設定footer本身高度*/
+	padding: 18px;
+	font-size: 15px;
+	height: 90px; /*設定footer本身高度*/
 	background-color: #FFEFC6;
 }
